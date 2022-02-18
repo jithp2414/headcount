@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.viewresturantsactivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:id="@+id/mainimage"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/secondlayout"
+        android:layout_below="@id/mainimage"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:id="@+id/view"
+            android:background="@color/blueicon"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="hajkdhgjk adjgh"
+            android:id="@+id/rname"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:background="@drawable/viewresturanthead"
+            android:layout_below="@id/view"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Head Count"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="14dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/viewheadwhite"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/profile"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/headcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="35"
+                    android:textColor="@color/black"
+                    android:textSize="24dp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-50dp"
+            android:id="@+id/darklayout"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:background="@drawable/viewheaddarklayout">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Original Capicaty:"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:id="@+id/t1"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/vieworiginal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:text="300"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Covid Safe Capicaty:"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/t2"
+                android:layout_below="@id/t1"
+                android:textSize="15dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ccholder"
+                android:background="@drawable/viewheadwhite"
+                android:layout_below="@id/vieworiginal"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@color/white"
+                    android:text="35"
+                    android:id="@+id/editcovid"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/covidtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="/200"
+                    android:textColor="@color/blueicon"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currently at:"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/t3"
+                android:layout_below="@id/t2"
+                android:textSize="15dp"/>
+
+
+            <TextView
+                android:id="@+id/viewcurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ccholder"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="300"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/updatebtn"
+            android:layout_above="@id/darklayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-25dp"
+            android:background="@drawable/enterbtn"
+            android:text="Update/Edit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rlogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/mainimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        android:src="@color/white"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>

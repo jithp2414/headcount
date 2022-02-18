@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blueicon">#4bc5dc</color>
+    <color name="green">#8bc63e</color>
+    <color name="darkblue">#007487</color>
+    <color name="bar1on">#61c3a4</color>
+    <color name="bar1off">#cae7dd</color>
+    <color name="bar2on">#8bc63e</color>
+    <color name="bar2aoff">#d7e6a0</color>
+    <color name="bar3on">#f8f1be</color>
+    <color name="bar3aoff">#ffdd17</color>
+    <color name="bar4on">#f7931d</color>
+    <color name="bar4aoff">#fbdcbf</color>
+    <color name="bar5on">#ee1d23</color>
+    <color name="bar5aoff">#f8b6bb</color>
+
+
+</resources>

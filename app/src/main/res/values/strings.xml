@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">headcount</string>
+    <string name="default_web_client_id1">442074915513-0sah91iic3lgavnjsd5r6392kf4f99kh.apps.googleusercontent.com</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

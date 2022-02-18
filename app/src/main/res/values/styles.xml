@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeWhite" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/homemainbackground</item>
+        <item name="colorPrimaryDark">@color/toolbarcolor</item>
+        <item name="colorAccent">@color/homemainbackground</item>
+
+
+    </style>
+
+
+    <color name="homemainbackground">#4bc5dc</color>
+    <color name="toolbarcolor">#4bc5dc</color>
+
+    <style name="SlideDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/goup</item>
+        <item name="android:windowExitAnimation">@anim/godown</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.addactivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainlayout"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:visibility="visible">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="enter resturant name"
+            android:id="@+id/addrname"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/addrname"
+            android:layout_marginTop="10dp"
+            android:hint="enter original capacity"
+            android:id="@+id/addoriginal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/addoriginal"
+            android:layout_marginTop="10dp"
+            android:hint="covid safe capacity"
+            android:id="@+id/covidcapacity"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rlogo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            android:layout_below="@id/covidcapacity"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add logo"
+            android:layout_below="@id/rlogo"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:id="@+id/addlogo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/addlogo"
+            android:hint="enter resturant address"
+            android:id="@+id/address"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="map"
+            android:background="@drawable/enterbtn"
+            android:layout_below="@id/address"
+            android:layout_marginTop="10dp"
+            android:id="@+id/map"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/address"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:id="@+id/lat"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:id="@+id/lng"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="submit"
+            android:id="@+id/submit"
+            android:background="@drawable/enterbtn"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapholder"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/mainmap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

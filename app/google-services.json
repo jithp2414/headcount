@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "442074915513",
+    "project_id": "headcount-baaf2",
+    "storage_bucket": "headcount-baaf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442074915513:android:a03b876a0b0fa522eaf168",
+        "android_client_info": {
+          "package_name": "com.futureproducts.headcount"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442074915513-0sah91iic3lgavnjsd5r6392kf4f99kh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_jbd9tHHpaN2zUQFKmYes8Gv3sMC3OC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442074915513-0sah91iic3lgavnjsd5r6392kf4f99kh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
